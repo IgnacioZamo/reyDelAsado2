@@ -9,6 +9,9 @@ export default {
 			'reyda-body': '#F5F5DC'
 		}
       },
+      fontFamily:{
+				"index-centro":['Agbalumo']
+			}
     },
 },
   plugins: []
