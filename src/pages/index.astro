@@ -32,12 +32,65 @@ import Layout from "../componentes/layout.astro"
     <!-- fin iconos y caracteristicas -->
 
     <!-- imagen estatica -->
-    <div class="flex justify-center">
-        <div class=" border-gray-700 w-4/5 h-60 mx-28 mb-16 border-4 bg-fixed bg-cover bg-no-repeat" style="background-image: url(https://chefeel.com/chefgeneralfiles/2020/10/chefeel-carne-asada-con-verduras-al-punto-de-sal.jpg)">
-            <p class="font-index-centro text-white text-5xl [text-shadow:3px_3px_3px_var(--tw-shadow-color)] shadow-black">La calidad premium nos avala</p>
-
+    <div class="flex justify-center flex-wrap mb-12">
+        <div class=" border-gray-700 w-4/5 sm:h-60 h-72 sm:mx-28 mx-10 mb-16 border-4 bg-fixed bg-cover bg-no-repeat flex items-center flex-col" style="background-image: url(https://chefeel.com/chefgeneralfiles/2020/10/chefeel-carne-asada-con-verduras-al-punto-de-sal.jpg)">
+            <p class="font-index-centro text-white lg:text-5xl sm:text-2xl text-xl [text-shadow:3px_3px_3px_var(--tw-shadow-color)] shadow-black sm:py-10 py-5">La calidad premium nos avala</p>
+            <p class="font-index-centro text-white lg:text-3xl sm:text-xl text-lg [text-shadow:3px_3px_3px_var(--tw-shadow-color)] shadow-black">Saborea la excelencia: carne rostizada gourmet en nuestro distinguido restaurante. Delicia culinaria inigualable.</p>
         </div>
     </div>
+    <!-- fin de imagen estatica -->
+
+
+    
+    <div class="lg:w-screen flex items-center justify-center">
+        <div class="lg:w-3/4 w-4/5">
+                <div class="grid grid-rows-4 place-content-center">
+                    <div class="grid grid-cols-2 border">
+                        <div class="flex justify-center ml-10 items-center p-4 lg:p-10">
+                            <img src="https://i.ibb.co/WsS85mc/vegetariano.jpg" class="lg:h-60 sm:h-36 h-24 border-4 border-gray-600 rounded-xl" alt="">
+                        </div>
+                        <div class="mr-10 lg:p-5 lg:px-24 p-1 px-18 flex justify-center flex-col items-center">
+                            <h3 class="font-bold lg:text-3xl text-xl mb-3">Opcion vegetariana</h3>
+                            <p class="lg:text-xl text-sm">Nuestra selección de platos vegetarianos asados te sorprenderá con sabores intensos y texturas irresistibles. Ingredientes frescos y técnicas culinarias innovadoras para una experiencia gastronómica inolvidable.</p>
+                        </div>
+                    </div>
+    
+                    <div class="grid grid-cols-2 border">
+                        <div class="mr-10 lg:p-5 lg:px-24 p-1 px-18 flex justify-center flex-col items-center">
+                            <h3 class="font-bold lg:text-3xl text-xl mb-3">Pastas</h3>
+                            <p class="lg:text-xl text-sm">Nuestras pastas artesanales, elaboradas con los mejores ingredientes y técnicas tradicionales, te transportarán a la auténtica cocina italiana. Deliciosas, al dente y con variedad de salsas exquisitas
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center mr-10 p-4 lg:p-10">
+                            <img src="https://i.ibb.co/jRTVbNJ/pastas.jpg" class="lg:h-60 sm:h-36 h-24 border-4 border-gray-600 rounded-xl" alt="">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 border">
+                        <div class="flex justify-center items-center mr-10 p-4 lg:p-10">
+                            <img src="https://i.ibb.co/Ky64ft2/picadas-academia-de-fiambres.webp" class="lg:h-60 sm:h-36 h-24 border-4 border-gray-600 rounded-xl" alt="">
+                        </div>
+                        <div class="mr-10 lg:p-5 lg:px-24 p-1 px-18 flex justify-center flex-col items-center">
+                            <h3 class="font-bold lg:text-3xl text-xl mb-3">¡PICADAS!</h3>
+                            <p class="lg:text-xl text-sm">Las mejores picadas para que disfrutes con tus amigos! Para que quedes pipon o bien para que pases el rato con tus amigos contando anecdotas junto a nuestros mejores lisos.</p>
+                        </div>
+                    </div>
+    
+                    <div class="grid grid-cols-2 border">
+                        <div class="mr-10 lg:p-5 lg:px-24 p-1 px-18 flex justify-center flex-col items-center">
+                            <h3 class="font-bold lg:text-3xl text-xl mb-3">POSTRES</h3>
+                            <p class="lg:text-xl text-sm">Descubre nuestros exquisitos postres artesanales y deleita tu paladar con creaciones dulces irresistibles y elegantes. Sabores únicos y presentación impecable.
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center mr-10 p-4 lg:p-10">
+                            <img src="https://i.ibb.co/f4pYX8C/HD-wallpaper-fresh-sweet-dessert-strawberrues-graphy-desser-chocolate.jpg" class="lg:h-60 sm:h-36 h-24 border-4 border-gray-600 rounded-xl" alt="">
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
 
 
 </Layout>
