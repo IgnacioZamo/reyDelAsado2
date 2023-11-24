@@ -10,7 +10,8 @@ export default {
 		}
       },
       fontFamily:{
-				"index-centro":['Agbalumo']
+				"index-centro":['Agbalumo'],
+        "menu":['Playfair Display']
 			}
     },
 },
