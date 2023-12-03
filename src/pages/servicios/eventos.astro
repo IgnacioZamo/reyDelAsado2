@@ -1,5 +1,6 @@
 ---
 import Layout from "../../componentes/layout.astro";
+
 ---
 
 <Layout titlePage="Eventos - Rey del Asado">
@@ -21,8 +22,8 @@ import Layout from "../../componentes/layout.astro";
 
     <fieldset class="border border-black w-full sm:w-3/4 mx-auto p-6">
         <legend class="text-xl">Hace tu reservacion!</legend>
-        <form action="post" class="flex gap-5 flex-col lg:flex-row">
-            <div class="flex w-full flex-col lg:flex-row">
+        <form action="" class="flex flex-col gap-5">
+            <div class="flex w-full flex-col lg:flex-row mb-5">
                 <h2 class="flex flex-row xl:text-xl lg:text-lg sm:text-sm font-bold lg:w-1/4 w-full items-center justify-center">Informacion del usuario</h2>
                 <div class="flex justify-center gap-8 w-full flex-col lg:flex-row">
                     <div class="flex flex-col gap-2">
@@ -35,9 +36,55 @@ import Layout from "../../componentes/layout.astro";
                     </div>
                     <div class="flex flex-col gap-2">
                         <label class="" for="edad">Fecha de nacimiento:</label>
-                        <input class="text-center" id="apellido" type="date">
+                        <input class="text-center" id="edad" type="date">
                     </div>
                 </div>
+            </div>
+
+<hr>
+<br>
+
+            <div class="flex w-full flex-col lg:flex-row">
+                <h2 class="flex flex-row xl:text-xl lg:text-lg sm:text-sm font-bold lg:w-1/4 w-full items-center justify-center">Informacion de contacto</h2>
+                <div class="flex justify-center gap-8 w-full flex-col lg:flex-row">
+                    <div class="flex flex-col gap-2">
+                        <label class="" for="telefono">Telefono:</label>
+                        <input class="text-center" id="telefono" type="number">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label class="" for="correo">Correo:</label>
+                        <input class="text-center" id="correo" type="text">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label class="" for="direccion">Direccion:</label>
+                        <input class="text-center" id="direccion" type="text">
+                    </div>
+                </div>
+            </div>
+
+<hr>
+<br>
+
+            <div class="flex w-full flex-col lg:flex-row">
+                <h2 class="flex flex-row xl:text-xl lg:text-lg sm:text-sm font-bold lg:w-1/4 w-full items-center justify-center">Informacion de reservacion</h2>
+                <div class="flex justify-center gap-8 w-full flex-col lg:flex-row">
+                    <div class="flex flex-col gap-2">
+                        <label class="" for="diaReservacion">Dia de reservacion:</label>
+                        <input class="text-center" id="diaReservacion" name="diaReservacion" min="2023-12-03" type="date">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label class="" for="hora">Hora:</label>
+                        <input class="text-center" id="hora" type="time" min="18:00" max="23:30" step="3600">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label class="" for="direccion">Cantidad de comensales:</label>
+                        <input class="text-center" id="direccion" type="number">
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="flex justify-center">
+                <button class=" w-28 border bg-gradient-to-r from-reydelasado-reyda-headerFooter to-red-950 text-white hover:text-yellow-400 rounded-lg py-3 ">¡Reservar!</button>
             </div>
         </form>
     </fieldset>
@@ -47,3 +94,4 @@ import Layout from "../../componentes/layout.astro";
     
 
 </Layout>
+
