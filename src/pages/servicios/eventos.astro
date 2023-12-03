@@ -6,12 +6,43 @@ import Layout from "../../componentes/layout.astro";
 
     <h1 class="text-6xl font-bold font-menu text-gray-800 underline mb-20 my-16 m-8 px-6">Eventos</h1>
 
-    <div class="my-12 flex justify-center">
-        <img src="https://regalosgourmetonline.com/blog/wp-content/uploads/2021/09/Sin-ti%CC%81tulo-2-676x423.png" class="h-72" alt="personas reunidas">
+    <div class="my-12 flex justify-center items-center">
+        <img src="https://regalosgourmetonline.com/blog/wp-content/uploads/2021/09/Sin-ti%CC%81tulo-2-676x423.png" class="xl:h-72 lg:h-48 h-36" alt="personas reunidas">
         <div class="flex items-center justify-center w-1/3">
-            <p class="font-menu font-bold text-xl p-6">"Desde que elegí este lugar, mis eventos se han vuelto verdaderamente únicos. La magia del ambiente y la calidad de servicio hacen la diferencia cada vez"</p>
+            <p class="font-menu font-bold xl:text-2xl lg:text-xl sm:text-lg p-6">"Desde que elegí este lugar, mis eventos se han vuelto verdaderamente únicos. La magia del ambiente y la calidad de servicio hacen la diferencia cada vez"</p>
         </div>
     </div>
+
+    <div class="mx-auto w-3/4 mb-10">
+        <p class="text-xl mb-5 underline underline-offset-2">Reserva tu mesa ahora. Deliciosos momentos te esperan.</p>
+        <p>Experimenta la exquisitez en nuestro restaurante. Reserva tu mesa ahora y disfruta de sabores inigualables en un ambiente acogedor. Con un proceso rápido y sencillo, aseguramos que tu experiencia culinaria sea memorable. Desde celebraciones especiales hasta encuentros casuales, estamos aquí para hacer que cada comida sea única. ¡Haz tu reserva y déjanos crear momentos deliciosos para ti y tus seres queridos</p>
+    </div>
+    <hr>
+
+    <fieldset class="border border-black w-full sm:w-3/4 mx-auto p-6">
+        <legend class="text-xl">Hace tu reservacion!</legend>
+        <form action="post" class="flex gap-5 flex-col lg:flex-row">
+            <div class="flex w-full flex-col lg:flex-row">
+                <h2 class="flex flex-row xl:text-xl lg:text-lg sm:text-sm font-bold lg:w-1/4 w-full items-center justify-center">Informacion del usuario</h2>
+                <div class="flex justify-center gap-8 w-full flex-col lg:flex-row">
+                    <div class="flex flex-col gap-2">
+                        <label class="" for="apellido">Apellido:</label>
+                        <input class="text-center" id="apellido" type="text">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label class="" for="nombre">Nombre:</label>
+                        <input class="text-center" id="nombre" type="text">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label class="" for="edad">Fecha de nacimiento:</label>
+                        <input class="text-center" id="apellido" type="date">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </fieldset>
+
+
 
     
 
