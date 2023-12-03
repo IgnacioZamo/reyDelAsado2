@@ -11,7 +11,8 @@ export default {
       },
       fontFamily:{
 				"index-centro":['Agbalumo'],
-        "menu":['Playfair Display']
+        "menu":['Playfair Display'],
+        "cuerpo": ['Hedvig Letters Serif']
 			}
     },
 },
