@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(() => {
       currentIndex = (currentIndex + 1) % totalItems;
       updateCarousel();
-    }, 4500); // Cambia la imagen cada 4 segundos
+    }, 4000); // Cambia la imagen cada 4 segundos
 
     function updateCarousel() {
       const newTransformValue = -currentIndex * 100 + '%';
