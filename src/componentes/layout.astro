@@ -1,5 +1,6 @@
 ---
 const {titlePage} = Astro.props;
+import { ViewTransitions } from "astro:transitions";
 
 ---
 
@@ -16,7 +17,7 @@ const {titlePage} = Astro.props;
     <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
 
 
-
+    <ViewTransitions />
     <title>{titlePage}</title>
 </head>
 <body class="text-center bg-reydelasado-reyda-body">
@@ -42,7 +43,7 @@ const {titlePage} = Astro.props;
                     <li class="lg:ml-5 text-2xl hover:text-red-500"><a href="/"><p>Inicio</p></a></li>
                     <li><a href="/menu"><p class="text-2xl hover:text-red-500">Menu</p></a></li>
                     <li><a href="/servicio"><p class="text-2xl hover:text-red-500">Servicios</p></a></li>
-                    <li><a href="#"><p class="text-2xl hover:text-red-500">Nostros</p></a></li>
+                    <li><a href="/about"><p class="text-2xl hover:text-red-500">Nostros</p></a></li>
                     <li><a href="#"><p class="text-2xl hover:text-red-500">Contacto</p></a></li>
                 </ul>
             </div>
